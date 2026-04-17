@@ -2,10 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 
-const WEBHOOK_URL = "http://localhost:5678/webhook/chat";
-
-// ⚠️ session simple (à améliorer plus tard)
-const SESSION_ID = "user_" + Math.random().toString(36).substring(2, 9);
+const WEBHOOK_URL = "http://localhost:5678/webhook-test/chat";
 
 interface Message {
   id: string;
