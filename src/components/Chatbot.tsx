@@ -4,6 +4,9 @@ import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 
 const WEBHOOK_URL = "http://localhost:5678/webhook-test/chat";
 
+// ⚠️ session simple (à améliorer plus tard)
+const SESSION_ID = "user_" + Math.random().toString(36).substring(2, 9);
+
 interface Message {
   id: string;
   role: "user" | "assistant";
