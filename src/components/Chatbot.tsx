@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MessageCircle, X, Send, Bot, User } from "lucide-react";
 
-const WEBHOOK_URL = "http://localhost:5678/webhook-test/chat";
+const WEBHOOK_URL = "http://localhost:5678/webhook/chat";
 
 // ⚠️ session simple (à améliorer plus tard)
 const SESSION_ID = "user_" + Math.random().toString(36).substring(2, 9);
@@ -24,7 +24,7 @@ const Chatbot = ({ isOpen, onToggle }: ChatbotProps) => {
       id: "welcome",
       role: "assistant",
       content:
-        "Bonjour 👋 Je suis l'assistant du Cabinet Médical Intelligent.\n\nJe peux vous aider à :\n• Prendre un rendez-vous\n• Modifier un rendez-vous\n• Répondre à vos questions",
+        "Bonjour 👋 Je suis l'assistant du Cabinet Médical Intelligent.\n\nJe peux vous aider à :\n• Prendre un rendez-vous\n• Modifier un rendez-vous\n• Répondre à vos questions\n Quel est votre nom et prénom",
     },
   ]);
 
